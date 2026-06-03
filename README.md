@@ -1,4 +1,4 @@
-# Coding-lab_Group5# 🏥 KNH Digital Infrastructure — Group XX
+# Coding-lab_Group5# 🏥 KNH Digital Infrastructure — Group 5
 
 A shell-script system that manages live sensor data (heart rate, temperature, water usage) for Kenyatta National Hospital.
 
