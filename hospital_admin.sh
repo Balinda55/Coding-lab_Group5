@@ -31,7 +31,7 @@ secure_data() {
         # -ld shows the directory details rather than the files inside it
         ls -ld "$target_dir"
     else
-        echo "Error: This directory '$target_dir' does not exist. Run initialize_system first." >&2
+        echo "Error: Directory '$target_dir' does not exist. Run initialize_system first." >&2
         return 1
     fi
 }
