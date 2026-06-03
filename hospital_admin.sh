@@ -38,5 +38,5 @@ secure_data() {
 
 initialize_system
 secure_data
-echo "System Environment - $(date)"
+echo "System Environment Secured - $(date)"
 
