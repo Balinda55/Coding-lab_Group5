@@ -7,7 +7,7 @@ initialize_system() {
             echo "Creating $dir directory..."
             mkdir -p "$dir"
             if [ $? -eq 0 ]; then
-                echo "Successfully created $dir."
+                echo "Successfully created the $dir."
             else
                 echo "Error: Failed to create $dir." >&2
                 return 1
