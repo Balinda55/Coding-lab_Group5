@@ -1,0 +1,24 @@
+# ============================================
+# KNH Hospital Project — .gitignore
+# ============================================
+
+# Live sensor data (never upload patient data)
+active_logs/
+
+# Archived logs
+archived_logs/
+
+# Generated analysis reports
+reports/
+
+# Python engine process file
+/tmp/hospital_system.pid
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
