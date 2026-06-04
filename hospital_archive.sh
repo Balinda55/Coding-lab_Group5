@@ -10,4 +10,4 @@ for file in active_logs/*.log
 		touch active_logs/${filename}.log
 		done
 		echo "Logs archived successfully on $TIMESTAMP"
-
+echo "Archive location: archived_logs/"
