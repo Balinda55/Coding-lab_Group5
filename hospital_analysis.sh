@@ -72,8 +72,35 @@ process_vitals() {
 
 # ---- MEMBER 6 FUNCTION Down here ----
 
-# u will write your code here before the function call
+water_audit() {
 
+    echo "============================================"
+    echo " Running Water Usage Audit..."
+    echo "============================================"
+
+    WATER_LOG="active_logs/water_usage_log.log"
+
+    if [ ! -f "$WATER_LOG" ]; then
+        echo "ERROR: water_usage_log.log not found. Start the engine first."
+        return 1
+    fi
+
+    awk -F'|' '
+    $2 ~ /ICU_WATER_RESERVE/ {
+        total += $3
+        count++
+    }
+    END {
+        if (count > 0)
+            printf "Average ICU Water Usage: %.2f Liters/min\n", total/count
+        else
+            printf "No ICU_WATER_RESERVE records found.\n"
+    }
+    ' "$WATER_LOG"
+
+    echo ""
+}
 
 #this is where u will call your function
 process_vitals
+water_audit
