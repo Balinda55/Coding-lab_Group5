@@ -72,6 +72,8 @@ process_vitals() {
 
 # ---- MEMBER 6 FUNCTION Down here ----
 
+# u will write your code here before the function call
 
 
+#this is where u will call your function
 process_vitals
